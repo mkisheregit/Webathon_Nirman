@@ -122,7 +122,7 @@ app.get("/showDB",function(req,res){
 
 
 //setting up server
-const port = process.env.PORT;
+let port = process.env.PORT;
 if(port==null||port==""){
   port =3000;
 }

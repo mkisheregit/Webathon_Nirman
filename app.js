@@ -9,7 +9,7 @@ app.set("view engine",'ejs');
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static('public'));
 
-mongoose.connect('mongodb://localhost:27017/participantDB',{useNewUrlParser:true,  useUnifiedTopology: true,useFindAndModify:false});
+mongoose.connect('mongodb+srv://admin-mohit:Test123@cluster0.4pepp.mongodb.net/participantDB',{useNewUrlParser:true,  useUnifiedTopology: true,useFindAndModify:false});
 
 const participantSchema = new mongoose.Schema({
   name:String,
@@ -44,7 +44,7 @@ if(requestedEvent=="fit-India"){
 }
 if(requestedEvent=="street-play"){
 let   EventTheme="Due to time constraint notable to add text."
- res.render("EventTemplate",{organizerImg:"DramaticSection.jpg",eventTitle:EventName,eventImg:"Street.jpg",eventTheme:EvenTheme});
+ res.render("EventTemplate",{organizerImg:"DramaticSection.jpg",eventTitle:EventName,eventImg:"Street.jpg",eventTheme:EventTheme});
 }
 else if(requestedEvent=="dance-competition"){
 let   EventTheme="Due to time constraint notable to add text."
@@ -122,6 +122,10 @@ app.get("/showDB",function(req,res){
 
 
 //setting up server
-app.listen(3000,()=>{
-  console.log("Server started at 'PORT':3000");
+const port = process.env.PORT;
+if(port==null||port==""){
+  port =3000;
+}
+app.listen(port,()=>{
+  console.log(`Server started at 'PORT':${port}`);
 })

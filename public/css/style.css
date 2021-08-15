@@ -1,0 +1,109 @@
+
+body{
+  background-color: #E0D42B;
+}
+.iitr_logo{
+  height: 120px;
+  width:120px;
+  border-radius: 50%;
+}
+
+.indian_flag_image{
+  height:400px;
+  width:400px;
+ border-radius: 50%;
+}
+.day{
+  background-color: #FF9933;
+}
+.month{
+  background-color: #ffffff;
+
+}
+.month h1{
+  color:#FF9933;
+}
+.year{
+  background-color:#138808;
+}
+h1{
+  color:white;
+}
+.navbar{
+  padding: 0 0 3.5rem;
+}
+.nav-item{
+  font-size:40px;
+  padding: 0 15px;
+  color:white;
+}
+.nav-item:hover{
+  text-decoration: none;
+}
+.greeting{
+  color:white;
+  font-size:20px;
+}
+.club{
+  width:120px;
+  height:120px;
+  border-radius: 50%;
+}
+
+#organizing-clubs{
+  background-color: black;
+}
+#organizing-clubs h1{
+  color:white;
+}
+#independence_day_Glimpses{
+  background-color: #ef8172;
+  color:#fff;
+  text-align:center;
+}
+
+.activity-image{
+  width:400px;
+  height:400px;
+  border-radius: 50%;
+}
+
+.carousel-item{
+  padding:2% 10%;
+  text-align:center;
+}
+.organizer{
+  min-height:200px;
+  background:black;
+}
+.Event_image{
+  max-height:500px;
+}
+.event-theme{
+  color:white;
+  font-size:20px;
+  padding:15px;
+}
+.winner{
+  background:#FF9933;
+}
+.runner-up{
+  background: ffffff;
+}
+.third-position{
+  background: #FF9933;
+}
+.participants{
+  background:#3529E0;
+}
+.prizes{
+  text-align:center;
+}
+.prizes h4{
+  font-size: 20px;
+  color:#E0C42B;
+}
+input::placeholder{
+  text-align: center;
+  
+}

@@ -1,0 +1,31 @@
+<%- include('partials/Header') -%>
+  <div class="container">
+
+  <div class="border border-light">
+     <div class="organizer p-5" >
+        <h1 class="text-center d-inline"><%= eventTitle %></h1>
+        <!-- <p class="d-inline align-bottom float-right"><i>Ornganized By<i></p> -->
+        <img src="/Images/OrganizerImages/<%=organizerImg%>" class="club float-right" alt="Organizer">
+
+      </div>
+      <img src="/Images/EventsImage/<%=eventImg%>" alt="Event_Image" class="Event_image w-100 p-4">
+      <p class="event-theme"><%=eventTheme%></p>
+      <div class="prizes text-center bg-light p-2">
+        <h2>Prizes</h2>
+        <div><h4><i>Winner</i></h4>500&#8377;, WristBand, Certificate</div>
+        <div><h4><i>First runner up</i></h4>350&#8377;, WristBand,Certificate </div>
+        <div><h4><i>second runner up</i></h4>200&#8377;, WristBand,  Certificate</div>
+        <div><h4><i>Others</i></h4>Refreshment and WristBand </div>
+      </div>
+  </div>
+  <form class="text-center m-2" action="/" method="post">
+    <button type="button" class="btn btn-secondary mb-2 col-6">Register for this Event</button>
+    <input class="form-control col-8 mx-auto" type="text" name="name"  placeholder="your name" required>
+    <input class="form-control col-8 mx-auto" type="number" name="age"  placeholder="Age" required>
+    <input class="form-control col-8 mx-auto" type="text" name="mobile_no"  placeholder="Mobile no" required>
+    <input class="form-control col-8 mx-auto mb-2" type="email" name="email_Id" value="" placeholder="Gmail Id">
+     <button type="submit" name="event_name" class=" btn btn-primary mx-auto" value="<%=eventTitle%>">Submit</button>
+  </form>
+  </div>
+
+<%- include('partials/Footer') -%>

@@ -30,7 +30,7 @@ app.get("/",function(req,res){
   res.render("Homepage");
 });
 
-app.get("/events",function(req,res){
+app.get("/events/",function(req,res){
   res.render("Events");
 });
 
